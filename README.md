@@ -2,6 +2,8 @@
 
 A modern factory production equipment management platform that provides equipment monitoring, personnel management, fault tracking, maintenance planning, and other one-stop solutions.
 
+**🌐 [切换到中文](./README.zh-CN.md)**
+
 ## 📋 Project Overview
 
 This is a factory equipment management system developed with Next.js full-stack technology, designed for small and medium-sized manufacturing enterprises. The system adopts modern web technology stack, providing an intuitive user interface and powerful functional modules to help enterprises achieve digital equipment management.
@@ -82,7 +84,7 @@ factory-equipment-management/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Git-StarName/factory-equipment-management.git
+   git clone https://github.com/your-username/factory-equipment-management.git
    cd factory-equipment-management
    ```
 
@@ -198,81 +200,3 @@ BCRYPT_ROUNDS=12
 RATE_LIMIT_MAX=100
 RATE_LIMIT_WINDOW=900000
 ```
-
-### Docker Configuration
-
-The system provides complete Docker support:
-- **Dockerfile**: Multi-stage build to optimize image size
-- **docker-compose.yml**: One-click deployment of application and database
-- **deploy.sh**: Automated production environment deployment script
-
-## 🧪 Development Guidelines
-
-### Code Standards
-- Use TypeScript for type-safe development
-- Follow ESLint code standards
-- Use Prettier for code formatting
-- Component-based development to improve code reusability
-
-### Database Development
-- Use Prisma for database modeling and migration
-- Provide database seed data for development and testing
-- Support Prisma Studio for visual database management
-
-### API Development
-- RESTful API design standards
-- JWT authentication mechanism
-- Unified error handling and response format
-- Automatic API documentation generation
-
-## 📈 Performance Optimization
-
-- **Frontend Optimization**: Code splitting, lazy loading, image optimization
-- **Backend Optimization**: Database index optimization, query optimization
-- **Caching Strategy**: Reasonable caching mechanism to improve response speed
-- **CDN Support**: Static resource CDN acceleration
-
-## 🔒 Security Features
-
-- **Authentication and Authorization**: JWT token authentication, multi-role permission control
-- **Data Encryption**: Encrypted storage of sensitive data
-- **Input Validation**: Strict input validation and filtering
-- **SQL Injection Protection**: Use ORM to prevent SQL injection
-- **XSS Protection**: Frontend input/output filtering
-- **HTTPS Support**: Support HTTPS encrypted transmission
-
-## 📱 Browser Compatibility
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-- Mobile browser support
-
-## 🤝 Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support and Contact
-
-If you encounter problems or have feature suggestions, please contact us through the following methods:
-
-- Submit an Issue
-- Send an email
-- Project discussion area
-
----
-
-**⭐ If this project helps you, please give it a Star to support us!**

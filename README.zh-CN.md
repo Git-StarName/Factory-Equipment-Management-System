@@ -2,6 +2,8 @@
 
 现代化的工厂生产设备管理平台，提供设备监控、人员管理、故障追踪、维护计划等一站式解决方案。
 
+**🌐 [Switch to English](./README.md)**
+
 ## 📋 项目概述
 
 这是一个基于Next.js全栈技术开发的工厂设备管理系统，专为中小型制造企业设计。系统采用现代化的Web技术栈，提供直观的用户界面和强大的功能模块，帮助企业实现设备数字化管理。
@@ -82,7 +84,7 @@ factory-equipment-management/
 
 1. **克隆项目**
    ```bash
-   git clone https://github.com/Git-StarName/factory-equipment-management.git
+   git clone https://github.com/your-username/factory-equipment-management.git
    cd factory-equipment-management
    ```
 
@@ -198,77 +200,3 @@ BCRYPT_ROUNDS=12
 RATE_LIMIT_MAX=100
 RATE_LIMIT_WINDOW=900000
 ```
-
-### Docker配置
-
-系统提供完整的Docker支持：
-- **Dockerfile**: 多阶段构建，优化镜像大小
-- **docker-compose.yml**: 一键部署应用和数据库
-- **deploy.sh**: 生产环境自动化部署脚本
-
-## 🧪 开发指南
-
-### 代码规范
-- 使用TypeScript进行类型安全的开发
-- 遵循ESLint代码规范
-- 使用Prettier进行代码格式化
-- 组件化开发，提高代码复用性
-
-### 数据库开发
-- 使用Prisma进行数据库建模和迁移
-- 提供数据库种子数据便于开发测试
-- 支持Prisma Studio可视化数据库管理
-
-### API开发
-- RESTful API设计规范
-- JWT认证机制
-- 统一的错误处理和响应格式
-- API文档自动生成
-
-## 📈 性能优化
-
-- **前端优化**: 代码分割、懒加载、图片优化
-- **后端优化**: 数据库索引优化、查询优化
-- **缓存策略**: 合理的缓存机制提高响应速度
-- **CDN支持**: 静态资源CDN加速
-
-## 🔒 安全特性
-
-- **认证授权**: JWT令牌认证，多角色权限控制
-- **数据加密**: 敏感数据加密存储
-- **输入验证**: 严格的输入验证和过滤
-- **SQL注入防护**: 使用ORM防止SQL注入
-- **XSS防护**: 前端输入输出过滤
-- **HTTPS支持**: 支持HTTPS加密传输
-
-## 📱 浏览器兼容性
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-- 移动端浏览器支持
-
-## 🤝 贡献指南
-
-1. Fork 项目
-2. 创建特性分支 (`git checkout -b feature/amazing-feature`)
-3. 提交更改 (`git commit -m 'Add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 创建 Pull Request
-
-## 📝 许可证
-
-此项目采用 MIT 许可证 - 详情请查看 [LICENSE](LICENSE) 文件
-
-## 🆘 支持与联系
-
-如遇到问题或有功能建议，请通过以下方式联系：
-
-- 提交 Issue
-- 发送邮件
-- 项目讨论区
-
----
-
-**⭐ 如果这个项目对你有帮助，请给个Star支持一下！**
