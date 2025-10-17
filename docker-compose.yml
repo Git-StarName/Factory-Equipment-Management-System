@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: factory-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: factory_db
+      MYSQL_USER: factory_user
+      MYSQL_PASSWORD: factory_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - factory-network
+
+  app:
+    build: .
+    container_name: factory-app
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: mysql://factory_user:factory_password@mysql:3306/factory_db
+      JWT_SECRET: your-secret-key-here
+      JWT_EXPIRES_IN: 7d
+      WEBSOCKET_PORT: 3001
+      WEBSOCKET_HOST: 0.0.0.0
+    depends_on:
+      - mysql
+    networks:
+      - factory-network
+
+  websocket:
+    build: .
+    container_name: factory-websocket
+    ports:
+      - "3001:3001"
+    environment:
+      WEBSOCKET_PORT: 3001
+      WEBSOCKET_HOST: 0.0.0.0
+    command: node websocket-server.js
+    depends_on:
+      - mysql
+    networks:
+      - factory-network
+
+volumes:
+  mysql_data:
+
+networks:
+  factory-network:
+    driver: bridge
